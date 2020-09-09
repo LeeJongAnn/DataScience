@@ -1,0 +1,8 @@
+import pandas as pd
+
+l = []
+l.append(['미국USD', '1,188.50', '하락 6.50'])
+l.append(['일본JPY (100엔)', '1,100.82', '하락 6.12'])
+
+df = pd.DataFrame(l, columns=['currency', 'won', 'up_down'])
+df.to_csv('exchange_rate.csv', index=False, encoding='cp949') 
